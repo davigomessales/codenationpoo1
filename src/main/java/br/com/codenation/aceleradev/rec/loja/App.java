@@ -3,11 +3,12 @@ package br.com.codenation.aceleradev.rec.loja;
 import java.util.Scanner;
 
 import br.com.codenation.aceleradev.rec.loja.DAO.UsuarioDao;
+import br.com.codenation.aceleradev.rec.loja.Entities.Usuario;
 
 public class App {
 	
 	public static void main(String[] args) {
-		String result = null;
+		Usuario result = null;
 		while(true) {
 			Scanner s = new Scanner(System.in);
 			System.out.println("Digite o cpf: ");
@@ -19,7 +20,7 @@ public class App {
 	        }
 		}
          
-         System.out.println("Bem vindo usuário!");
+         System.out.println("Bem vindo usuário! "+ result.getNome());
          System.out.println("Escolha uma categoria:");
          System.out.println("1- Shows");
          System.out.println("2- Filmes");

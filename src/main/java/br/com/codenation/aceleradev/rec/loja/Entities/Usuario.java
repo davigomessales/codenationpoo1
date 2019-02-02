@@ -11,6 +11,8 @@ public class Usuario {
 		this.nome = nome;
 		this.cpf = cpf;
 	}
+	public Usuario() {
+	}
 	public Integer getId() {
 		return id;
 	}
