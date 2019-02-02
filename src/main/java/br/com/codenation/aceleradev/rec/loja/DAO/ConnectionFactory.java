@@ -4,6 +4,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionFactory {
+	
 	public static Connection createConnection() throws SQLException{
         String url = "jdbc:mysql://db4free.net:3306/adminproj";
         String user = "adminproj";
