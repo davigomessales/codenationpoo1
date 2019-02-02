@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import br.com.codenation.aceleradev.rec.loja.exceptions.UsuarioInvalidoException;
 
 public class UsuarioDao {
-	public static boolean existeCpf(String cpf) throws UsuarioInvalidoException{
-		
+	public static String existeCpf(String cpf) throws UsuarioInvalidoException{
+		String nome = null;
 		try {
 			Connection conexao = ConnectionFactory.createConnection();
 			String sql ="select cpf from usuario where cpf=?";
@@ -17,19 +17,14 @@ public class UsuarioDao {
 			ps.setString(1, cpf);
 			ResultSet rs = ps.executeQuery();
 			
-			String nome = null;
 			while(rs.next()) {
 				nome = rs.getString(1);
-			}
-			
-			if (nome == null) {
-				return false;
 			}
 			ps.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return true;
+		return nome;
 	}
 }
