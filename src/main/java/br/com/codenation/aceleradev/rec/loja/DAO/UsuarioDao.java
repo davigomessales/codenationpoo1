@@ -5,8 +5,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import br.com.codenation.aceleradev.rec.loja.exceptions.UsuarioInvalidoException;
+
 public class UsuarioDao {
-	public static boolean existeCpf(String cpf) {
+	public static boolean existeCpf(String cpf) throws UsuarioInvalidoException{
 		
 		try {
 			Connection conexao = ConnectionFactory.createConnection();
