@@ -9,7 +9,7 @@ public class Software extends Produto {
 		
 	public Software(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, String categoria, String versao,
 			String requisitosSitema) {
-		super(id, requisitosSitema, preco, qtdEstoque, qtdEstoque);
+		super(id, requisitosSitema, preco, qtdEstoque, categoria);
 		this.versao = versao;
 		this.requisitosSitema = requisitosSitema;
 	}

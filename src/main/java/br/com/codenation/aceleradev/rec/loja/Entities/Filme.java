@@ -7,8 +7,8 @@ public class Filme extends Produto {
     private String diretor;
     private String anoLancamento;
 
-    public Filme(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, Integer categoria, String diretor, String anoLancamento) {
-        super(id, anoLancamento, preco, categoria, categoria);
+    public Filme(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, String categoria, String diretor, String anoLancamento) {
+        super(id, anoLancamento, preco, qtdEstoque, categoria);
         this.diretor = diretor;
         this.anoLancamento = anoLancamento;
     }

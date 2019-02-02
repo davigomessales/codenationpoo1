@@ -8,9 +8,9 @@ public abstract class Produto {
     private String descricao;
     private BigDecimal preco;
     private Integer qtdEstoque;
-    private Integer categoria;
+    private String categoria;
     
-	public Produto(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, Integer categoria) {
+	public Produto(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, String categoria) {
 		this.id = id;
 		this.descricao = descricao;
 		this.preco = preco;
@@ -42,10 +42,10 @@ public abstract class Produto {
 	public void setQtdEstoque(Integer qtdEstoque) {
 		this.qtdEstoque = qtdEstoque;
 	}
-	public Integer getCategoria() {
+	public String getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(Integer categoria) {
+	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
     

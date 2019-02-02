@@ -7,8 +7,8 @@ public class Show extends Produto{
     private String artista;
     private Integer numeroMusicas;
 
-    public Show(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, Integer categoria, String artista, Integer numeroMusicas) {
-        super(id, artista, preco, numeroMusicas, numeroMusicas);
+    public Show(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, String categoria, String artista, Integer numeroMusicas) {
+        super(id, artista, preco, qtdEstoque, categoria);
         this.artista = artista;
         this.numeroMusicas = numeroMusicas;
     }
