@@ -2,23 +2,23 @@ package br.com.codenation.aceleradev.rec.loja.Entities;
 
 import java.math.BigDecimal;
 
-public class Filme {
+public class Show {
     private Long id;
     private String descricao;
     private BigDecimal preco;
     private Integer qtdEstoque;
     private Integer categoria;
-    private String diretor;
-    private String anoLancamento;
+    private String artista;
+    private Integer numeroMusicas;
 
-    public Filme(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, Integer categoria, String diretor, String anoLancamento) {
+    public Show(Long id, String descricao, BigDecimal preco, Integer qtdEstoque, Integer categoria, String artista, Integer numeroMusicas) {
         this.id = id;
         this.descricao = descricao;
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
         this.categoria = categoria;
-        this.diretor = diretor;
-        this.anoLancamento = anoLancamento;
+        this.artista = artista;
+        this.numeroMusicas = numeroMusicas;
     }
 
     public Long getId() {
@@ -61,19 +61,19 @@ public class Filme {
         this.categoria = categoria;
     }
 
-    public String getDiretor() {
-        return diretor;
+    public String getArtista() {
+        return artista;
     }
 
-    public void setDiretor(String diretor) {
-        this.diretor = diretor;
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
-    public String getAnoLancamento() {
-        return anoLancamento;
+    public Integer getNumeroMusicas() {
+        return numeroMusicas;
     }
 
-    public void setAnoLancamento(String anoLancamento) {
-        this.anoLancamento = anoLancamento;
+    public void setNumeroMusicas(Integer numeroMusicas) {
+        this.numeroMusicas = numeroMusicas;
     }
 }
